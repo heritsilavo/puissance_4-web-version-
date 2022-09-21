@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="conteneur">
+    <div class="choisir">
+        <div class="choose">⇊</div>
+        <div class="choose">⇊</div>
+        <div class="choose">⇊</div>
+        <div class="choose">⇊</div>
+        <div class="choose">⇊</div>
+        <div class="choose">⇊</div>
+      </div>
+      
+      <div class="puissance4">
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+        <div class="case">
+          <div class="circle"></div>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <div class="reset">↺</div>
+        <div class="start">▶</div>
+        <div class="leave">■</div>
+        <div class="help">⁉</div>
+      </div>
+      <!--les divs cachés--> 
+      <div class="gagne">
+        <div class="couleurGagnant"></div>
+        <div class="restartGame">↺</div>
+        <div class="quit">■</div>
+        <div class="continue">▶</div>
+        <p class="felicitation">felicitation!</p><br>
+        <p class="textGangant"><span>couleur</span> gagne</p>
+      </div>
+  
+      <div class="error">
+        <div class="icon">😕</div>
+        <div class="errorText">Vous devez d'abord appuier sui le boutton <span>▶</span> pour demmarer le jeu</div>
+        <div class="ok" onclick='document.querySelector(".error").style.animation = "monte 1s forwards"'>OK</div>
+      </div>
+  
+      <div class="plein">
+        <div class="icon">😀</div>
+        <div class="pleinText"><span>matche nul!!</span> <br>voulez-vous reesayer une autre partie!</div>
+        <div class="oui" onclick='document.querySelector(".plein").style.animation = "monte 1s forwards";initialise();affiche()'>OUI</div>
+      </div>
+  
+      <div class="howToPlay">
+        <div class="icon">⁉</div>
+        <div class="txt">
+          <div class="titre">COMMENT JOUER ?</div><br>
+          <ul>
+            <li>D'abord eppuiez sur <span class="startIcon">▶</span> pour commencer une partie</li>
+            <li>Il faut 02 personne pou jouer</li>
+            <li>chacun controle un pion "rouge" et "jaune"</li>
+            <li>pour gagner il faut aligner 04 pion comme les figures ci dessous le montrent</li>
+          </ul>
+          <div class="img">
+            <img src="image/exemple/exemple1.png" alt="img1">
+            <img src="image/exemple/exemple2.png" alt="img2">
+            <img src="image/exemple/exemple3.png" alt="img3">
+            <img src="image/exemple/exemple4.png" alt="img4">
+          </div>
+        </div>
+        <div class="ferme" onclick='document.querySelector(".howToPlay").style.display = "none"'>❌</div>
+        <div class="jouer" onclick='document.querySelector(".ferme").click();document.querySelector(".start").click()'>JOUER</div>
+      </div>
+      <!--les divs cachés-->
+</div>
+      <script src="index.js"></script>
+</body>
+</html>
